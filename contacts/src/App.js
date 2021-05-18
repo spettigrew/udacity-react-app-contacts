@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Contacts from './Contacts';
 
 class ContactList extends Component {
   render() {
@@ -17,17 +18,7 @@ class App extends Component {
   render() {
   return (
     <div className="App">
-      <ContactList contacts={[
-          { name: 'Tyler '},
-          { name: 'Karen' },
-          { name: 'Richard '}
-        ]}/>
-        <ContactList contacts={[
-          { name: 'Amanda' },
-          { name: 'Mikenzie' },
-          { name: 'Ryan' }
-        ]}/>
-
+      < Contacts contacts={contacts} />
     </div>
   );
 }
