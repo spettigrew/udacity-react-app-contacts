@@ -1,8 +1,9 @@
 import React from 'react';
 
-const ListConacts = () => {
+const ListContacts = (props) => {
     return (
-        contacts.map((contact) => {
+        <ol className="contact-list">
+        {props.contacts.map((contact) => {
             <li key={contact.id} className='contact-list-item'>
                 <div
                     className='contact-avatar'
@@ -19,8 +20,9 @@ const ListConacts = () => {
                 </button>
             </li>
         }
-        )
+        )}
+        </ol>
     )}
 
 
-export default ListConacts;
+export default ListContacts;
