@@ -1,18 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Contacts from './Contacts';
 
-class ContactList extends Component {
-  render() {
-    const people = this.props.contacts
-
-    return <ol>
+const ContactList = () => {
+    return (
+    <ol>
       {people.map((person) => (
         <li key={person.name}>{person.name}</li>
       ))}
     </ol>
-  }
-}
+    )}
 
 class App extends Component {
   render() {
