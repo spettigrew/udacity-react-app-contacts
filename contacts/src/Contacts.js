@@ -1,4 +1,5 @@
-
+import React from React;
+import ListContacts from './ListContacts';
 
 const contacts = [
     {
